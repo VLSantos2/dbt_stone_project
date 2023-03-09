@@ -16,6 +16,9 @@ sources:
         columns:
           - name: '"codigo da transacao"'
             description: Código único da transação
+            tests:
+              - not_null
+              - unique
           - name: '"data e hora da transacao"'
             description: Data e hora da transação (UTC 0)
           - name: '"metodo de captura"'
