@@ -1,3 +1,8 @@
+{{
+    config(
+        materialized = 'view'
+    )
+}}
 SELECT
      "codigo da transacao"           AS cd_transacao
     ,"data e hora da transacao"      AS tm_transacao
