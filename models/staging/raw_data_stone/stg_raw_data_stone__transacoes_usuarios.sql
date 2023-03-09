@@ -9,4 +9,4 @@ SELECT
     ,"codigo do usuario"             AS cd_usuario
     ,"estado do usuario"             AS nm_estado_usuario
     ,"cidade do usuario"             AS nm_cidade_usuario
-FROM {{SOURCE('','')}}
+FROM {{ source('raw_data_stone','transacoes_usuarios') }}
