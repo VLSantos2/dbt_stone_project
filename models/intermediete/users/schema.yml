@@ -1,7 +1,7 @@
 version: 2
 
 models:
-  - name: stg_raw_data_stone__transacoes_usuarios
+  - name: int_users__transacoes
     description: Representa transações realizadas pelos usuários
     columns:
       - name: cd_transacao

@@ -1,7 +1,7 @@
 version: 2
 
 models:
-  - name: stg_raw_data_stone__transacoes_usuarios
+  - name: mart_users__transacoes__fato
     description: Representa transações realizadas pelos usuários
     columns:
       - name: cd_transacao
@@ -18,6 +18,12 @@ models:
         description: Estado da transação (valores aceitos. paid, refused, refunded e chargedback)
       - name: vl_transacao
         description: Valor da transação (R$)
+      - name: cd_usuario
+        description: Código único do usuário
+
+  - name: mart_users__transacoes__dim_usuario
+    description: É a tabela que contém dados dos usuários
+    columns:
       - name: cd_usuario
         description: Código único do usuário
       - name: nm_estado_usuario
